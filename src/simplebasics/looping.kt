@@ -41,5 +41,28 @@ fun main(args: Array<String>) {
         println("Index: $index Value: $value")
     }
 
+    val listOfCars = listOf("Audi", "Volvo", "Honda", "Nissan")
+
+    for (car in listOfCars){
+        println(car)
+    }
+
+    for((index, car) in listOfCars.withIndex()){
+        println("At index: $index car: $car")
+    }
+
+    var sum = 0
+
+    for(i in 1..20){
+        sum = sum + i
+    }
+    println(sum)
+
+    var number = 20
+
+    while (number != 0){
+        print("$number ")
+        number--
+    }
 }
 
